@@ -1,0 +1,243 @@
+Updated App.css
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Candara', sans-serif;
+  background-color: #dfe6f9;
+  line-height: 1.5;
+}
+
+h2, h3 {
+  font-family: 'Candara', sans-serif;
+  font-weight: bold; /* Bold for headings */
+}
+
+.card {
+  font-family: 'Candara', sans-serif;
+  font-size: 14px;
+}
+
+
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  background-color: #d2dbf4;
+  border: 1px solid #e0e0e0; /* or your desired border */
+  border-radius: 8px; /* Adjust the value to change the roundness */
+  padding: 10px; /* Optional: add padding for better spacing */
+  box-shadow: 0 2px 4px rgba(11, 1, 1, 0.1); /* Optional: adds some shadow for depth */
+  margin-bottom: 20px;
+  position: relative;
+  width: 92px;
+
+}
+
+.display-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  width: 100px; /* Adjust width if needed */
+  height: 28px; /* Adjust height for consistency */
+  cursor: pointer;
+  font-size: 14px;
+  padding: 0 10px;
+}
+
+.display-button .icon {
+  width: 14px; /* Adjust the size of the icon */
+  height: 14px;
+  margin-right: 5px;
+}
+
+.options-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ffffff;;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(211, 219, 255, 0.831);
+  z-index: 10;
+}
+
+.option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.option label {
+  margin-right: 10px;
+}
+
+.option select {
+  padding: 5px;
+  border-radius: 4px;
+  border: 1.5px solid #c5d5ff;
+}
+
+.kanban-board {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+}
+
+.column {
+  min-width: 300px;
+  background-color: #dfe6f9;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.column h2 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.column h2 .group-title {
+  margin-left: 8px;
+  flex-grow: 1;
+}
+
+.column h2 .ticket-count {
+  font-size: 14px;
+  color: #4a505a;
+  margin-right: 8px;
+}
+
+.priority-icon, .status-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.add-icon {
+  margin-right: 5px;
+}
+
+.icon:hover, .icon:active {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+
+.card {
+  background-color: #f1f0ffc9;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(235, 19, 19, 0.1);
+  padding: 10px;
+  margin-bottom: 10px;
+  transition: transform 0.8s ease, filter 0.4s ease;
+  filter: drop-shadow(5px 5px 5px rgb(195, 195, 241));
+}
+
+.card:hover{
+  transform: scale(1.05);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.ticket-id {
+  font-size: 12px;
+  color: #1c3869;
+}
+
+.user-avatar {
+  width: 24px;
+  height: 24px;
+  background-color: #ccc;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  color: #fff;
+}
+
+.card h3 {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+}
+
+.feature-request {
+  display: flex;
+  align-items: center;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  padding: 2px 6px;
+  font-size: 12px;
+  color: #6b6f76;
+  margin-right: auto;
+}
+
+.feature-request .dot {
+  width: 5px;
+  height: 5px;
+  background-color: #6b6f76;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.tag {
+  font-size: 12px;
+  background-color: #3055c4;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.urgent { color: #fc7840; }
+.high { color: #f2c94c; }
+.medium { color: #4caf50; }
+.low, .no-priority { color: #6b6f76; }
+
+.done { color: #4caf50; }
+.in-progress { color: #f2c94c; }
+.todo, .backlog { color: #6b6f76; }
+.cancelled { color: #e74c3c; }
+
+.column h2 .priority-icon,
+.column h2 .status-icon {
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.card .priority-icon {
+  display: none;
+}
